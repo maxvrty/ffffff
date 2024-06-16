@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+  .main-container {
+    background-color: #f4f8fb;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0 80px 60px;
+  }
+
+  @media (max-width: 991px) {
+    .main-container {
+      padding-left: 20px;
+    }
+  }
+
+  .content-wrapper {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 940px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .content-wrapper {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .text-container {
+    align-self: end;
+    display: flex;
+    margin-top: 21px;
+    flex-direction: column;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 140%;
+  }
+
+  @media (max-width: 991px) {
+    .text-container {
+      white-space: initial;
+    }
+  }
+
+  .greeting {
+    color: #696969;
+    font: 40px Rubik, sans-serif;
+  }
+
+  .name {
+    color: #000;
+    margin-top: 18px;
+    font: 64px Rubik, sans-serif;
+  }
+
+  @media (max-width: 991px) {
+    .name {
+      font-size: 40px;
+    }
+  }
+
+  .image-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-image {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 120px;
+  }
+
+  .banner-image {
+    aspect-ratio: 1.19;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    margin-top: 75px;
+  }
+
+  @media (max-width: 991px) {
+    .banner-image {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+</style>
+
+<section class="main-container">
+  <div class="content-wrapper">
+    <div class="text-container">
+      <p class="greeting">Hello,</p>
+      <p class="name">Abdulbek</p>
+    </div>
+    <div class="image-container">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4fd0e8c89cea63e41bd314f76aba2ebd82e35fa50a084ea52125a2f22751f47?apiKey=decb6927c06a4668869582f6cdd61af7&" alt="Profile Image" class="profile-image" />
+    </div>
+  </div>
+  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fa7777942c16e0742d21637c4d9e3add1566fb1a811f56edc10506bf9fbcab8d?apiKey=decb6927c06a4668869582f6cdd61af7&" alt="Banner Image" class="banner-image" />
+</section>
+</body>
+</html>
